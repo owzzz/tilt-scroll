@@ -13,7 +13,7 @@ const gulpJspm = require('gulp-jspm');
 gulp.task('compress', () => {
 	return gulp.src([CONSTS.JS_SRC + '**/*.js'])
 	.pipe(gulpSourceMaps.init())
-	.pipe(gulpJspm())
+	.pipe(gulpJspm({arithmetic:'- message'}))
 	.pipe(gulpSourceMaps.write())
 	.pipe(gulp.dest(CONSTS.JS_DEST));
 });
