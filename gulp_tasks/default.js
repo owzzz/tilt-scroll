@@ -3,7 +3,7 @@
 const gulp = require('gulp');
 
 gulp.task('default', () => {
-    gulp.start('build');
+	gulp.start('build');
 });
 
 gulp.task('build', ['clean', 'copy', 'sass', 'scripts', 'imagemin']);

@@ -57,5 +57,15 @@
     "node-normalize-scss": "^1.2.0",
     "postcss-assets": "^3.0.3",
     "require-dir": "^0.3.0"
+  },
+  "jspm": {
+    "dependencies": {
+      "jquery": "npm:jquery@^2.2.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }
