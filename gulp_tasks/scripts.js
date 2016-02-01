@@ -6,14 +6,14 @@ const gulpESLint = require('gulp-eslint');
 const gulpNotify = require('gulp-notify');
 const gulpPlumber = require('gulp-plumber');
 const gulpSourceMaps = require('gulp-sourcemaps');
-const CONSTS = require('./constants');
 const gulpJspm = require('gulp-jspm');
+const CONSTS = require('./constants');
 
 
 gulp.task('compress', () => {
 	return gulp.src([CONSTS.JS_SRC + '**/*.js'])
 	.pipe(gulpSourceMaps.init())
-	.pipe(gulpJspm({arithmetic:'- message'}))
+	.pipe(gulpJspm())
 	.pipe(gulpSourceMaps.write())
 	.pipe(gulp.dest(CONSTS.JS_DEST));
 });
