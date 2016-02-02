@@ -13,7 +13,7 @@ const CONSTS = require('./constants');
 gulp.task('compress', () => {
 	return gulp.src([CONSTS.JS_SRC + '**/*.js'])
 	.pipe(gulpSourceMaps.init())
-	.pipe(gulpJspm())
+	.pipe(gulpJspm({selfExecutingBundle: true}))
 	.pipe(gulpSourceMaps.write())
 	.pipe(gulp.dest(CONSTS.JS_DEST));
 });

@@ -53,6 +53,7 @@
                 "args": "none"
             }
         ],
+        "no-unused-vars": [0],
         "no-console": [0],
         "quotes": [
             2,
