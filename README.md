@@ -1,6 +1,6 @@
 # Tilt Scroll
 
-A simple tilt to scroll prototype. Using the mobile devices' gyroscope and accelerometer and the DeviceOrientationEvent API
+A simple tilt to scroll prototype. Using the mobile devices' gyroscope / accelerometer and the DeviceOrientationEvent API
 
 ## Installation
 
