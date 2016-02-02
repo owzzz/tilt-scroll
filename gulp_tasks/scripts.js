@@ -11,7 +11,7 @@ const CONSTS = require('./constants');
 
 
 gulp.task('compress', () => {
-	return gulp.src([CONSTS.JS_SRC + '**/*.js'])
+	return gulp.src([CONSTS.JS_SRC + 'main.js'])
 	.pipe(gulpSourceMaps.init())
 	.pipe(gulpJspm({selfExecutingBundle: true}))
 	.pipe(gulpSourceMaps.write())
