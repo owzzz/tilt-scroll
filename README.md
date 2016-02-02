@@ -13,7 +13,7 @@ A simple tilt to scroll prototype. Using the mobile devices' gyroscope and accel
 #### 2. Install JSPM
 
 ```javascript
-	npm install -jspm
+	npm install -g jspm
 ```
 
 #### 3. Install NPM Dependencies
